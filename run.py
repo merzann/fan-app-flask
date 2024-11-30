@@ -43,7 +43,13 @@ def contact():
 
 @app.route("/careers")
 def careers():
-    return render_template("careers.html", page_title="Careers")
+    jobs = {
+        "Development": [],
+        "Content Creation & Media Design": [],
+        "Administration": [],
+        "Accounts": []
+    }
+    return render_template("careers.html", page_title="Careers", jobs=jobs)
 
 
 if __name__ == "__main__":

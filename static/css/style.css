@@ -2,6 +2,15 @@
     width: 100%;
 }
 
+.intro {
+    margin-bottom: 60px;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
 ul.flashes {
     font-family: Lora, 'Times New Roman', serif;
     font-weight: 600;
@@ -15,4 +24,17 @@ ul.flashes {
 
 ul.flashes li {
     color:#3d4f62;
+}
+
+em {
+    font-size: 0.9em;
+}
+
+.initiative {
+    width: 100%;
+    font-size: 14px;
+    font-family: Lora, 'Times New Roman', serif;
+    color:#3d4f62;
+    padding-top: 40px;
+    margin-bottom: 0px;
 }

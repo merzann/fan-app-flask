@@ -1,4 +1,37 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>{{ page_title }}</h2>
+<h2>{{ page_title }}</h2>
+
+<div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+
+        {% if jobs %}
+            <p class="intro">We are currently looking for talented individuals to join our team in the following departments:</p>
+
+            {% for department, vacancies in jobs.items() %}
+                <h3>{{ department }}</h3>
+
+                {% if vacancies %}
+                    <ul>
+                        {% for job in vacancies %}
+                        <li>{{ job }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p><em>There are currently no vacancies in this department.</em></p>
+                {% endif %}
+
+                {% if not loop.last %}
+                <hr>
+                {% endif %}
+
+            {% endfor %}
+        {% endif %}
+
+        <div>
+            <p class="initiative">We're always excited to hear from talented individuals!<br>Feel free to send us your
+                unsolicited application, and we'll reach out if a suitable opportunity arises!</p>
+        </div>
+    </div>
+</div>
 {% endblock %}
