@@ -44,10 +44,10 @@ def contact():
 @app.route("/careers")
 def careers():
     jobs = {
-        "Development": [],
-        "Content Creation & Media Design": [],
-        "Administration": [],
-        "Accounts": []
+        "Full-time Positions": [],
+        "Part-time Positions": [],
+        "Work from Home": [],
+        "Intern / Apprenticeship": []
     }
     return render_template("careers.html", page_title="Careers", jobs=jobs)
 
