@@ -1,3 +1,18 @@
 .col-md-5 img {
     width: 100%;
 }
+
+ul.flashes {
+    font-family: Lora, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    list-style-type: none;
+    background-color: #fed49e;
+    padding: 12px 17px;
+    width: fit-content;
+}
+
+ul.flashes li {
+    color:#3d4f62;
+}
